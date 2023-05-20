@@ -4,7 +4,6 @@ const FRAMES_PER_SECOND = 60;
 const WINNING_SCORE = 15;
 let winScreen = false;
 
-//test
 let ball = {
     x: 50,
     y: 50,
@@ -87,7 +86,6 @@ function drawTable()
     drawRect(0, 0, canvas.width, canvas.height, "#0047AB");
     for(let i = 20; i < canvas.height; i += 30)
         drawRect(canvas.width / 2 - 3, i, 6, 10, "#A0A0A0");
-    //Lekkie wytlumaczenie, aby cos wysrodkowac trzeba podzielic przez 2. canvas.width / 2 od tego miejsca sa rysowane prostokaty, warto, aby byly one o parzystej wielosci i nastepnie odjac polowe. wtedy idealnie na srodku bedzie wysrodokowany pasek
 }
 
 function drawBall()
@@ -176,7 +174,6 @@ function ballReset()
 
 function game()
 {
-    //test
     drawTable();
 
     if(winScreen)
